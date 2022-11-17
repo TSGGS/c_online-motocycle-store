@@ -1,0 +1,97 @@
+/* ELEMENTS */
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+/* CLASSES */
+.bg-blue {
+    background-color: skyblue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.box-shadow {
+    box-shadow: 0 0 8px 2px gray;
+    position: relative;
+    z-index: 10;
+}
+
+.content {
+    height: 90vh;
+    width: 100vw;
+    background-color: red;
+}
+
+/* IDS */
+#gne {
+    color: white;
+    font-weight: bolder;
+    font-size: 60pt;
+    border: 10px solid white;
+}
+
+#index-content {
+    background-image: url(./../images/design/motorcycles.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#index-action {
+    margin-top: 10vh;
+}
+
+#index-action a {
+    text-decoration: none;
+    font-size: xx-large;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin: 0 2vw;
+}
+
+#index-action a:hover {
+    text-decoration: underline;
+}
+
+#signup {
+    background-color: orange;
+    color: white;
+}
+
+#login {
+    background-color: white;
+    color: orange;
+}
+
+#top-nav {
+    width: 100vw;
+    height: 10vh;
+}
+
+#top-nav-elements {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-nav-elements a {
+    padding: 2.5vh 1vw;
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+#top-nav-elements a:hover {
+    border-bottom: 3px solid black;
+    margin-bottom: -3px;
+}
