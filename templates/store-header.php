@@ -10,7 +10,7 @@
 <body>
     <nav class="box-shadow bg-orange" id="top-nav">
         <div id="top-nav-elements">
-            <a href="./index.php">Home</a>
+            <a href="./">Home</a>
             <a href="./products.php">Products</a>
             <a href="./services.php">Services</a>
             <a href="./about.php">About</a>
