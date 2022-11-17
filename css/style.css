@@ -6,14 +6,6 @@
 }
 
 /* CLASSES */
-.bg-blue {
-    background-color: skyblue;
-}
-
-.bg-red {
-    background-color: red;
-}
-
 .bg-orange {
     background-color: orange;
 }
@@ -27,9 +19,20 @@
 .content {
     height: 90vh;
     width: 100vw;
-    background-color: red;
 }
 
+.content-full {
+    height: 100vh;
+    width: 100vw;
+}
+
+.display-none {
+    visibility: hidden;
+}
+
+.error {
+    color: red;
+}
 /* IDS */
 #gne {
     color: white;
@@ -62,12 +65,51 @@
     text-decoration: underline;
 }
 
-#signup {
+#login-box {
+    height: 56vh;
+    width: 30vw;
+    position: absolute;
+    top: 22vh;
+    right: 6vw;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 2px rgba(00, 00, 00, 0.6);
+}
+
+#login-content {
+    background-image: url(./../images/design/driver.jpg);
+    background-size: 100% 100%;
+}
+
+#login-form {
+    margin: 0 3% 0 2%;
+}
+
+#login-form input, button {
+    width: 100%;
+    font-size: 18pt;
+    margin: 20px 0;
+}
+
+#login-form span {
+    display: inline-block;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+#login-title {
+    margin: 4vh 0;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+#view-products-action {
     background-color: orange;
     color: white;
 }
 
-#login {
+#login-action {
     background-color: white;
     color: orange;
 }
