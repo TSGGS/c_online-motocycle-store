@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 /* ELEMENTS */
 * {
     margin: 0;
     padding: 0;
     user-select: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 /* CLASSES */
+.background {
+    background-image: linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)), url(./../images/design/motorcycle.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    color:white;
+}
+
+.background h1 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 .bg-orange {
     background-color: orange;
 }
@@ -33,7 +50,100 @@
 .error {
     color: red;
 }
+
+.faq-answer {
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    height: 0;
+    font-size: 0;
+    text-indent: 4ch;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    transition: all 0.35s;
+    padding: 0.5em 0;
+}
+
+.faq-question {
+    background-color: orange;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: black;
+    width: 70vw;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    text-indent: 1ch;
+}
+
+.faq-question:hover ~ .faq-answer {
+    height: 7vh;
+    font-size: initial;
+
+}
+
+.faq-question span {
+    padding-right: 1vw;
+    transition: all 0.35s;
+}
+
+.faq-question:hover span {
+    transform: rotate(90deg);
+}
+
+.services-info-item {
+    outline: 5px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 20vw;
+    margin: 0 2vw;
+}
+
+.services-info-item img {
+    border-radius: 3px;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 20%;
+}
+
+.services-info-item span {
+    font-size: xx-large;
+    text-align: center;
+    height: 25%;
+    
+}
 /* IDS */
+#about-info {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+}
+
+#about-info span{
+    width: 55vw;
+    font-size: x-large;
+    line-height: 3ch;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+#faq-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
 #gne {
     color: white;
     font-weight: bolder;
@@ -73,7 +183,7 @@
     position: absolute;
     top: 22vh;
     right: 6vw;
-    background-color: white;
+    background-color: orange;
     border-radius: 8px;
     box-shadow: 0 0 8px 2px rgba(00, 00, 00, 0.6);
 }
@@ -84,13 +194,27 @@
 }
 
 #login-form {
-    margin: 0 3% 0 2%;
+    margin: 0 2%;
 }
 
-#login-form input, button {
+#login-form input {
+    font-size: 18pt;
+    outline: 1px solid gray;
+    border: none;
+    border-radius: 3px;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#login-form button {
     width: 100%;
     font-size: 18pt;
     margin: 20px 0;
+}
+
+#login-form button:hover {
+    cursor: pointer;
 }
 
 #login-form span {
@@ -106,9 +230,14 @@
     font-weight: bold;
 }
 
+#services-info {
+    display: flex;
+    flex-direction: row;
+}
+
 #view-products-action {
     background-color: orange;
-    color: white;
+    color: rgb(24, 21, 21);
 }
 
 #login-action {
